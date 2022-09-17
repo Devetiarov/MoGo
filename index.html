@@ -1,4 +1,5 @@
-<!DOCTYPE>
+<!DOCTYPE html>
+
 <html lang="en">
 
     <head>
@@ -7,21 +8,22 @@
         <link rel="stylesheet" href="assets/css/style.css">
         <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@400;700&family=Roboto:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/62299d365a.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
         <title>MoGo</title>
     </head>
 
     <body>
-        <header class="header">
+        <header id="header" class="header">
             <div class="container">
                 <div class="header__inner">
-                    <div class="header__logo">MoGo</div>
+                    <div class="header__logo" data-scroll="#intro">MoGo</div>
 
-                    <nav class="nav">
-                        <a class="nav__link active" href="#">About</a>
-                        <a class="nav__link" href="#">Services</a>
-                        <a class="nav__link" href="#">Blog</a>
-                        <a class="nav__link" href="#">Work</a>
-                        <a class="nav__link" href="#">Contact</a>
+                    <nav id="nav" class="nav">
+                        <a class="nav__link" href="#" data-scroll="#about">About</a>
+                        <a class="nav__link" href="#" data-scroll="#services">Services</a>
+                        <a class="nav__link" href="#" data-scroll="#works">Work</a>
+                        <a class="nav__link" href="#" data-scroll="#blog">Blog</a>
+                        <a class="nav__link" href="#" data-scroll="#footer">Contact</a>
 
                         <a class="nav__link" href="#">
                             <i class="fa-solid fa-cart-shopping"></i>
@@ -31,7 +33,7 @@
                         </a>
                     </nav>
 
-                    <button class="nav-toggle" type="button">
+                    <button id="nav_toggle" class="nav-toggle" type="button">
                         <span class="nav-toggle__item">Menu</span>
                     </button>
                 </div>
@@ -40,7 +42,8 @@
 
         <div class="page">
 
-            <div class="intro">
+            <!-- Intro -->
+            <div id="intro" class="intro">
                 <div class="container">
                     <div class="intro__inner">
                         <h2 class="intro__suptitle">Creative Template</h2>
@@ -76,7 +79,8 @@
 
             </div><!-- /.intro -->
 
-            <section class="section">
+            <!-- About -->
+            <section id="about" class="section">
                 <div class="container">
 
                     <div class="section__header">
@@ -119,6 +123,7 @@
                 </div><!-- /.container -->
             </section>
 
+            <!-- Statistics -->
             <div class="statistics">
                 <div class="container">
 
@@ -148,7 +153,8 @@
                 </div><!-- /.container -->
             </div>
 
-            <section class="section">
+            <!-- Services -->
+            <section id="services" class="section">
                 <div class="container">
 
                     <div class="section__header">
@@ -203,6 +209,7 @@
                 </div><!-- /.container -->
             </section>
 
+            <!-- Devices -->
             <section class="section section--devices">
                 <div class="container">
 
@@ -219,6 +226,7 @@
                 </div>
             </section>
 
+            <!-- Wedo -->
             <section class="section">
                 <div class="container">
 
@@ -238,32 +246,32 @@
                         <div class="wedo__item">
 
                             <div class="accordion">
-                                <div class="accordion__item">
+                                <div class="accordion__item" data-collapse="#wedo_1">
                                     <div class="accordion__header">
                                         <img class="accordion__icon" src="assets/images/we_do/we_do_icon_photography.png" alt="">
                                         <div class="accordion__title">Photography</div>
                                     </div>
-                                    <div class="accordion__content">
+                                    <div id="wedo_1" class="accordion__content">
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                                     </div>
                                 </div>
 
-                                <div class="accordion__item active">
+                                <div class="accordion__item active" data-collapse="#wedo_2">
                                     <div class="accordion__header">
                                         <img class="accordion__icon" src="assets/images/we_do/we_do_icon_creativity.png" alt="">
                                         <div class="accordion__title">Creativity</div>
                                     </div>
-                                    <div class="accordion__content">
+                                    <div id="wedo_2" class="accordion__content">
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                                     </div>
                                 </div>
 
-                                <div class="accordion__item">
+                                <div class="accordion__item" data-collapse="#wedo_3">
                                     <div class="accordion__header">
                                         <img class="accordion__icon" src="assets/images/we_do/we_do_icon_webdesign.png" alt="">
                                         <div class="accordion__title">Web Design</div>
                                     </div>
-                                    <div class="accordion__content">
+                                    <div id="wedo_3" class="accordion__content">
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                                     </div>
                                 </div>
@@ -275,21 +283,35 @@
                 </div>
             </section>
 
+            <!-- Reviews 1 -->
             <div class="section section--gray">
                 <div class="container">
                     <div class="reviews">
-                        <a class="reviews__btn reviews__btn--prev" href="#">Prev</a>
-                        <a class="reviews__btn reviews__btn--next" href="#">Next</a>
 
-                        <div class="reviews__item">
-                            <img class="reviews__photo" src="assets/images/works/avatar.png" alt="">
-                            <div class="reviews__text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”</div>
-                            <div class="reviews__author">Jon Doe</div>
+                        <div data-slider>
+                            <div>
+                                <div class="reviews__item">
+                                    <img class="reviews__photo" src="assets/images/works/avatar.png" alt="">
+                                    <div class="reviews__text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”</div>
+                                    <div class="reviews__author">Jon Doe</div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="reviews__item">
+                                    <img class="reviews__photo" src="assets/images/works/avatar.png" alt="">
+                                    <div class="reviews__text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”</div>
+                                    <div class="reviews__author">Jon Doe</div>
+                                </div>
+                            </div>
+
                         </div>
+
                     </div>
                 </div>
             </div>
 
+            <!-- Team -->
             <section class="section">
                 <div class="container">
 
@@ -335,21 +357,21 @@
                             <div class="card__inner">
                                 <div class="card__img">
                                     <img src="assets/images/team/2.jpg" alt="">
-                                    <div class="card__text">
-                                        <div class="social">
-                                            <a class="social__item" href="#" target="_blank">
-                                                <i class="fa-brands fa-facebook-f"></i>
-                                            </a>
-                                            <a class="social__item" href="#" target="_blank">
-                                                <i class="fa-brands fa-twitter"></i>
-                                            </a>
-                                            <a class="social__item" href="#" target="_blank">
-                                                <i class="fa-brands fa-pinterest-p"></i>
-                                            </a>
-                                            <a class="social__item" href="#" target="_blank">
-                                                <i class="fa-brands fa-instagram"></i>
-                                            </a>
-                                        </div>
+                                </div>    
+                                <div class="card__text">
+                                    <div class="social">
+                                        <a class="social__item" href="#" target="_blank">
+                                            <i class="fa-brands fa-facebook-f"></i>
+                                        </a>
+                                        <a class="social__item" href="#" target="_blank">
+                                            <i class="fa-brands fa-twitter"></i>
+                                        </a>
+                                        <a class="social__item" href="#" target="_blank">
+                                            <i class="fa-brands fa-pinterest-p"></i>
+                                        </a>
+                                        <a class="social__item" href="#" target="_blank">
+                                            <i class="fa-brands fa-instagram"></i>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -364,21 +386,21 @@
                             <div class="card__inner">
                                 <div class="card__img">
                                     <img src="assets/images/team/3.jpg" alt="">
-                                    <div class="card__text">
-                                        <div class="social">
-                                            <a class="social__item" href="#" target="_blank">
-                                                <i class="fa-brands fa-facebook-f"></i>
-                                            </a>
-                                            <a class="social__item" href="#" target="_blank">
-                                                <i class="fa-brands fa-twitter"></i>
-                                            </a>
-                                            <a class="social__item" href="#" target="_blank">
-                                                <i class="fa-brands fa-pinterest-p"></i>
-                                            </a>
-                                            <a class="social__item" href="#" target="_blank">
-                                                <i class="fa-brands fa-instagram"></i>
-                                            </a>
-                                        </div>
+                                </div>
+                                <div class="card__text">
+                                    <div class="social">
+                                        <a class="social__item" href="#" target="_blank">
+                                            <i class="fa-brands fa-facebook-f"></i>
+                                        </a>
+                                        <a class="social__item" href="#" target="_blank">
+                                            <i class="fa-brands fa-twitter"></i>
+                                        </a>
+                                        <a class="social__item" href="#" target="_blank">
+                                            <i class="fa-brands fa-pinterest-p"></i>
+                                        </a>
+                                        <a class="social__item" href="#" target="_blank">
+                                            <i class="fa-brands fa-instagram"></i>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -394,6 +416,7 @@
                 </div><!-- /.container -->
             </section>
 
+            <!-- Logos -->
             <div class="section section--gray">
                 <div class="container">
 
@@ -426,7 +449,8 @@
                 </div>
             </div>
 
-            <section class="section">
+            <!-- Works -->
+            <section id="works" class="section">
                 <div class="container">
                     <div class="section__header">
                         <h3 class="section__suptitle">What we do</h3>
@@ -502,21 +526,34 @@
 
             </section>
 
+            <!-- Reviews 2 -->
             <div class="section">
                 <div class="container">
                     <div class="reviews">
-                        <a class="reviews__btn reviews__btn--prev" href="#">Prev</a>
-                        <a class="reviews__btn reviews__btn--next" href="#">Next</a>
 
-                        <div class="reviews__item">
-                            <img class="reviews__photo" src="assets/images/works/avatar.png" alt="">
-                            <div class="reviews__text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”</div>
-                            <div class="reviews__author">Jon Doe</div>
+                        <div data-slider>
+                            <div>
+                                <div class="reviews__item">
+                                    <img class="reviews__photo" src="assets/images/works/avatar.png" alt="">
+                                    <div class="reviews__text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”</div>
+                                    <div class="reviews__author">Jon Doe</div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="reviews__item">
+                                    <img class="reviews__photo" src="assets/images/works/avatar.png" alt="">
+                                    <div class="reviews__text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”</div>
+                                    <div class="reviews__author">Jon Doe</div>
+                                </div>
+                            </div>
                         </div>
+
                     </div>
                 </div>
             </div>
 
+            <!-- Clients -->
             <section class="section section--clients">
                 <div class="container">
 
@@ -566,7 +603,8 @@
                 </div><!-- /.container -->
             </section>
 
-            <section class="section">
+            <!-- Blog -->
+            <section id="blog" class="section">
                 <div class="container">
 
                     <div class="section__header">
@@ -685,6 +723,7 @@
                 </div><!-- /.container -->
             </section>
 
+            <!-- Map -->
             <section class="section section--map">
                 <div class="container">
                     <div class="map">
@@ -696,7 +735,8 @@
                 </div>
             </section>
 
-            <footer class="footer">
+            <!-- Footer -->
+            <footer id="footer" class="footer">
                 <div class="container">
 
                     <div class="footer__inner">
@@ -733,9 +773,6 @@
                                     </a>
                                     <a href="#" target="_blank">
                                         <i class="fa-brands fa-dribbble"></i>
-                                    </a>
-                                    <a href="#" target="_blank">
-                                        <i class="fa-brands fa-tumblr"></i>
                                     </a>
                                 </div>
                             </div>
@@ -829,6 +866,11 @@
             </footer>
 
         </div><!-- /.page -->
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script src="assets/js/app.js"></script>
 
     </body>
 
