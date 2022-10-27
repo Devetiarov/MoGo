@@ -74,4 +74,14 @@ $(function() {
         slidesToShow: 1,
         slidesToScroll: 1,
     });
+
+    /* Intro slider*/
+    $('.intro__single__item').slick({
+        infinity: true,
+        speed: 300,
+        arrows: false,
+        fade: false,
+        slidesToShow: 1,
+        slidesToScroll: 1
+    });
 });
